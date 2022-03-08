@@ -1,0 +1,80 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>雪碧图生成工具</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+     
+      <div class="row">
+        <div class="mb-5"></div>
+        <div class="col-md-8 offset-2">
+
+          <h1 class="mb-3">雪碧图生成工具</h1>
+
+          <form method="POST" class="needs-validation" novalidate  action="upload" enctype="multipart/form-data">
+        
+            <div class="row">
+
+              <div class="col-md-12 mb-3">
+                <label for="file">文件</label>
+                <input type="file" class="form-control-file" id="file" name="file" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  文件上传
+                </div>
+              </div>
+
+              <div class="col-md-12 mb-3">
+                <label for="padding">间距</label>
+                <input type="text" class="form-control" name="padding" id="padding" value="0" placeholder="" required>
+              </div>
+           
+              <div class="col-md-12 mb-3">
+                <label for="algorithm">算法</label>
+                <select class="custom-select d-block w-100" name="algorithm"  id="algorithm" required>
+                  <option>binary-tree</option>
+                  <option>top-down</option>
+                  <option>left-right</option>
+                  <option>diagonal</option>
+                  <option>alt-diagonal</option>
+                </select>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="quality">输出质量</label>
+                <input type="range" value="100" class="form-control-range" name="quality" id="quality">
+                <small id="emailHelp" class="form-text text-muted">当前值</small>
+              </div>
+              
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">上传</button>
+              </div>
+            </div>
+          
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2018 iamxz</p>
+      </footer>
+    </div>
+
+ 
+  </body>
+</html>
